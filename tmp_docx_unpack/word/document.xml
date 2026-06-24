@@ -1,0 +1,1753 @@
+<?xml version="1.0" encoding="UTF-8"?><w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16du="http://schemas.microsoft.com/office/word/2023/wordml/word16du" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16sdtfl="http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh w16sdtfl w16du wp14">
+  <w:body>
+    <w:p w14:paraId="3E695C87" w14:textId="77777777" w:rsidR="00205EF5" w:rsidRPr="00B70B7D" w:rsidRDefault="00205EF5" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="0" w:name="_Hlk122013429"/>
+      <w:bookmarkEnd w:id="0"/>
+    </w:p>
+    <w:p w14:paraId="6B0F8C28" w14:textId="77777777" w:rsidR="00205EF5" w:rsidRPr="00EC73C2" w:rsidRDefault="00205EF5" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="4E80CC46" w14:textId="1EFFBDF1" w:rsidR="00B70B7D" w:rsidRPr="00EC73C2" w:rsidRDefault="00433A39" w:rsidP="00B70B7D">
+      <w:pPr>
+        <w:jc w:val="right"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cs="Calibri"/>
+          <w:b/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cs="Calibri"/>
+          <w:b/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+        <w:t>[RAISON SOCIALE]</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3E296914" w14:textId="3DE8E3DC" w:rsidR="00B70B7D" w:rsidRPr="00EC73C2" w:rsidRDefault="00B70B7D" w:rsidP="00B70B7D">
+      <w:pPr>
+        <w:jc w:val="right"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cs="Calibri"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cs="Calibri"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+        <w:t>À l&#x2019;attention de [MADAME/MONSIEUR] [NOM] [PRENOM]</w:t>
+      </w:r>
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="55B10153" w14:textId="7D8C1037" w:rsidR="00B70B7D" w:rsidRPr="00256E9C" w:rsidRDefault="00433A39" w:rsidP="00B70B7D">
+      <w:pPr>
+        <w:jc w:val="right"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cs="Calibri"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cs="Calibri"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+        <w:t>[ADRESSE]</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="028CBDEC" w14:textId="722B1F97" w:rsidR="00B70B7D" w:rsidRPr="008244A2" w:rsidRDefault="00433A39" w:rsidP="00B70B7D">
+      <w:pPr>
+        <w:jc w:val="right"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cs="Calibri"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+        <w:t>[CODE POSTAL] [VILLE]</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="6C5EC85F" w14:textId="77777777" w:rsidR="00B70B7D" w:rsidRPr="008244A2" w:rsidRDefault="00B70B7D" w:rsidP="00B70B7D">
+      <w:pPr>
+        <w:jc w:val="right"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="0B39C2DA" w14:textId="38802698" w:rsidR="00205EF5" w:rsidRPr="00EC73C2" w:rsidRDefault="00205EF5" w:rsidP="00B70B7D">
+      <w:pPr>
+        <w:jc w:val="right"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="8"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+        <w:t>Lattes, le [DATE DU JOUR]</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="41F4E39C" w14:textId="77777777" w:rsidR="00205EF5" w:rsidRPr="00B70B7D" w:rsidRDefault="00205EF5" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="6ACCBD46" w14:textId="77777777" w:rsidR="00205EF5" w:rsidRDefault="00205EF5" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="4B860BF5" w14:textId="77777777" w:rsidR="004615EB" w:rsidRDefault="004615EB" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="708594A3" w14:textId="77777777" w:rsidR="004615EB" w:rsidRPr="00B70B7D" w:rsidRDefault="004615EB" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="4FA41ADD" w14:textId="77777777" w:rsidR="00FE71ED" w:rsidRDefault="00FE71ED" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:b/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="65A76E9E" w14:textId="77777777" w:rsidR="00352064" w:rsidRDefault="00352064" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:b/>
+          <w:color w:val="EE0000"/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="36"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="634B9789" w14:textId="77777777" w:rsidR="00205EF5" w:rsidRPr="008244A2" w:rsidRDefault="005B336B" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:b/>
+          <w:color w:val="EE0000"/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="32"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:b/>
+          <w:color w:val="EE0000"/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="32"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+        <w:t>DEVIS</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="66015170" w14:textId="77777777" w:rsidR="00205EF5" w:rsidRPr="00B70B7D" w:rsidRDefault="00205EF5" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5B9E1A64" w14:textId="77777777" w:rsidR="00FE71ED" w:rsidRDefault="00FE71ED" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5B674CF6" w14:textId="40E2756D" w:rsidR="00205EF5" w:rsidRPr="00EC73C2" w:rsidRDefault="00433A39" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="8"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+        <w:t>[MADAME/MONSIEUR],</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="25006305" w14:textId="77777777" w:rsidR="00205EF5" w:rsidRPr="00EC73C2" w:rsidRDefault="00205EF5" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1AE36EA4" w14:textId="77777777" w:rsidR="005B336B" w:rsidRPr="00EC73C2" w:rsidRDefault="005B336B" w:rsidP="005B336B">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="284"/>
+        </w:tabs>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+        <w:t>C&amp;R Conseil est un cabinet d'expertise comptable et de conseils aux entreprises et dirigeants. Gestion de vos factures, déclarations fiscales, suivi de votre trésorerie, optimisation de votre rémunération, rédaction de vos procès-verbaux... C'est simple. On s'occupe de tout.</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="2218496B" w14:textId="77777777" w:rsidR="005B336B" w:rsidRPr="00EC73C2" w:rsidRDefault="005B336B" w:rsidP="005B336B">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="284"/>
+        </w:tabs>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="18C55E6C" w14:textId="77777777" w:rsidR="005B336B" w:rsidRPr="00EC73C2" w:rsidRDefault="005B336B" w:rsidP="005B336B">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="284"/>
+        </w:tabs>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+        <w:t>Toutefois, loin des prestations uniques et standardisées, nous souhaitons devenir le partenaire incontournable de votre vie de dirigeant. Nous nous adaptons à votre métier, aux enjeux de votre entreprise, et à vos spécificités propres. Un travail en commun qui participera à la pérennisation et au développement de votre activité !</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="66C412D3" w14:textId="77777777" w:rsidR="005B336B" w:rsidRPr="00EC73C2" w:rsidRDefault="005B336B" w:rsidP="005B336B">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="284"/>
+        </w:tabs>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="0B130E55" w14:textId="77777777" w:rsidR="00FE71ED" w:rsidRPr="00EC73C2" w:rsidRDefault="005B336B" w:rsidP="005B336B">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="284"/>
+        </w:tabs>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+        <w:t>C&amp;R Conseil, c'est la volonté d'être bien plus qu'un simple cabinet de comptabilité.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="75199902" w14:textId="77777777" w:rsidR="00AD2F5D" w:rsidRDefault="00AD2F5D" w:rsidP="002F656E">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:bCs/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="720FE287" w14:textId="77777777" w:rsidR="00AD2F5D" w:rsidRDefault="00AD2F5D" w:rsidP="002F656E">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:bCs/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="6672382C" w14:textId="77777777" w:rsidR="00A318CC" w:rsidRDefault="00A318CC" w:rsidP="002F656E">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:bCs/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblStyle w:val="TableauGrille4-Accentuation3"/>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="3846"/>
+        <w:gridCol w:w="6610"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="0049080A" w:rsidRPr="00EC73C2" w14:paraId="4E8BF90C" w14:textId="77777777" w:rsidTr="00E90C22">
+        <w:trPr>
+          <w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+          <w:trHeight w:val="445"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="3846" w:type="dxa"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="EE0000"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="46E1D5D0" w14:textId="77777777" w:rsidR="0049080A" w:rsidRPr="00EC73C2" w:rsidRDefault="0049080A" w:rsidP="0049080A">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+              <w:t>Présentation de votre entreprise</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6610" w:type="dxa"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="EE0000"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="60D460A1" w14:textId="77777777" w:rsidR="0049080A" w:rsidRPr="00EC73C2" w:rsidRDefault="0049080A" w:rsidP="0049080A">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="0049080A" w:rsidRPr="00EC73C2" w14:paraId="4CEE9273" w14:textId="77777777" w:rsidTr="00E90C22">
+        <w:trPr>
+          <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+          <w:trHeight w:val="423"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="3846" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="A5A5A5" w:themeColor="accent3"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="6ADE2529" w14:textId="77777777" w:rsidR="0049080A" w:rsidRPr="00EC73C2" w:rsidRDefault="0049080A" w:rsidP="0049080A">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+              <w:t>Activité de l&#x2019;entreprise</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6610" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="A5A5A5" w:themeColor="accent3"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="674493FF" w14:textId="2D2238F3" w:rsidR="0049080A" w:rsidRPr="00E90C22" w:rsidRDefault="0049080A" w:rsidP="0049080A">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="0049080A" w:rsidRPr="00E90C22" w14:paraId="790BAA0D" w14:textId="77777777" w:rsidTr="00E90C22">
+        <w:trPr>
+          <w:trHeight w:val="416"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="3846" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="7775266F" w14:textId="77777777" w:rsidR="0049080A" w:rsidRPr="00EC73C2" w:rsidRDefault="0049080A" w:rsidP="0049080A">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+              <w:t>Chiffre d&#x2019;affaires annuel estimé</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6610" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="6450564D" w14:textId="77777777" w:rsidR="0049080A" w:rsidRPr="00E90C22" w:rsidRDefault="0049080A" w:rsidP="0049080A">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:cnfStyle w:val="000000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00E90C22" w:rsidRPr="00EC73C2" w14:paraId="530C5AF7" w14:textId="77777777" w:rsidTr="00E90C22">
+        <w:trPr>
+          <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+          <w:trHeight w:val="421"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="3846" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="4F87AC02" w14:textId="77777777" w:rsidR="00E90C22" w:rsidRPr="00EC73C2" w:rsidRDefault="00E90C22" w:rsidP="00E90C22">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+              <w:t>Forme juridique de l&#x2019;entreprise</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6610" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="22DEA929" w14:textId="14EF9BF8" w:rsidR="00E90C22" w:rsidRPr="00E90C22" w:rsidRDefault="00E90C22" w:rsidP="00E90C22">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00E90C22" w:rsidRPr="00EC73C2" w14:paraId="2569668D" w14:textId="77777777" w:rsidTr="00E90C22">
+        <w:trPr>
+          <w:trHeight w:val="421"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="3846" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="1C0AA41A" w14:textId="77777777" w:rsidR="00E90C22" w:rsidRPr="00EC73C2" w:rsidRDefault="00E90C22" w:rsidP="00E90C22">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+              <w:t>Régime TVA</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6610" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="5F464246" w14:textId="473F3CD4" w:rsidR="00E90C22" w:rsidRPr="00E90C22" w:rsidRDefault="00E90C22" w:rsidP="00E90C22">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:cnfStyle w:val="000000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00E90C22" w:rsidRPr="00EC73C2" w14:paraId="3941B389" w14:textId="77777777" w:rsidTr="00E90C22">
+        <w:trPr>
+          <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+          <w:trHeight w:val="421"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="3846" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="578FF102" w14:textId="77777777" w:rsidR="00E90C22" w:rsidRPr="00EC73C2" w:rsidRDefault="00E90C22" w:rsidP="00E90C22">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+              <w:t>Régime fiscal</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6610" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="481DC5FF" w14:textId="600D72A5" w:rsidR="00E90C22" w:rsidRPr="00E90C22" w:rsidRDefault="00E90C22" w:rsidP="00E90C22">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00E90C22" w:rsidRPr="00E90C22" w14:paraId="250233DA" w14:textId="77777777" w:rsidTr="00E90C22">
+        <w:trPr>
+          <w:trHeight w:val="413"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="3846" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="289157D4" w14:textId="77777777" w:rsidR="00E90C22" w:rsidRPr="00EC73C2" w:rsidRDefault="00E90C22" w:rsidP="00E90C22">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+              <w:t>Date de début de mission</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6610" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="6AE3174F" w14:textId="7EF417C7" w:rsidR="00E90C22" w:rsidRPr="00E90C22" w:rsidRDefault="00E90C22" w:rsidP="00E90C22">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:cnfStyle w:val="000000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00E90C22" w:rsidRPr="00EC73C2" w14:paraId="7FA03C45" w14:textId="77777777" w:rsidTr="00E90C22">
+        <w:trPr>
+          <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+          <w:trHeight w:val="405"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="3846" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="608BF94D" w14:textId="77777777" w:rsidR="00E90C22" w:rsidRPr="00EC73C2" w:rsidRDefault="00E90C22" w:rsidP="00E90C22">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+              <w:t>Date de fin du premier exercice</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6610" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="74E7E745" w14:textId="77777777" w:rsidR="00E90C22" w:rsidRPr="00E90C22" w:rsidRDefault="00E90C22" w:rsidP="00E90C22">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="41352D29" w14:textId="77777777" w:rsidR="00205EF5" w:rsidRPr="00EC73C2" w:rsidRDefault="00205EF5" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="284"/>
+        </w:tabs>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:kern w:val="28"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="30124EBE" w14:textId="77777777" w:rsidR="00B32E7E" w:rsidRDefault="00B32E7E">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:kern w:val="28"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:kern w:val="28"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+        <w:br w:type="page"/>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4963A87D" w14:textId="77777777" w:rsidR="00FE71ED" w:rsidRDefault="00FE71ED" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="284"/>
+        </w:tabs>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:kern w:val="28"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="0F43989B" w14:textId="77777777" w:rsidR="00B32E7E" w:rsidRPr="00EC73C2" w:rsidRDefault="00B32E7E" w:rsidP="00205EF5">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="284"/>
+        </w:tabs>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:kern w:val="28"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2F4239F1" w14:textId="77777777" w:rsidR="004615EB" w:rsidRPr="008244A2" w:rsidRDefault="004615EB" w:rsidP="004615EB">
+      <w:pPr>
+        <w:pBdr>
+          <w:bottom w:val="single" w:sz="6" w:space="1" w:color="auto"/>
+        </w:pBdr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="EE0000"/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="EE0000"/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>NOTRE PROPOSITION</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1AB59EE8" w14:textId="77777777" w:rsidR="004615EB" w:rsidRPr="00EC73C2" w:rsidRDefault="004615EB" w:rsidP="004615EB">
+      <w:pPr>
+        <w:pBdr>
+          <w:bottom w:val="single" w:sz="6" w:space="1" w:color="auto"/>
+        </w:pBdr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:b/>
+          <w:bCs/>
+          <w:color w:val="EE0000"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="449DE147" w14:textId="77777777" w:rsidR="000C2530" w:rsidRPr="00EC73C2" w:rsidRDefault="000C2530" w:rsidP="00DC0D01">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="77D84711" w14:textId="77777777" w:rsidR="000C2530" w:rsidRPr="00EC73C2" w:rsidRDefault="000C2530" w:rsidP="00DC0D01">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="fr-FR"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3F2B550E" w14:textId="77777777" w:rsidR="002E71AE" w:rsidRPr="00EC73C2" w:rsidRDefault="002E71AE" w:rsidP="002E71AE">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="284"/>
+        </w:tabs>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:kern w:val="28"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:highlight w:val="yellow"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblStyle w:val="TableauGrille4-Accentuation3"/>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="5228"/>
+        <w:gridCol w:w="5228"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="002E71AE" w:rsidRPr="00EC73C2" w14:paraId="18FF025D" w14:textId="77777777" w:rsidTr="002E71AE">
+        <w:trPr>
+          <w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+          <w:trHeight w:val="445"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="5228" w:type="dxa"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="EE0000"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="7C6AD9EA" w14:textId="77777777" w:rsidR="002E71AE" w:rsidRPr="00EC73C2" w:rsidRDefault="002E71AE" w:rsidP="004E221B">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+              <w:t>Liste des missions</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5228" w:type="dxa"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="EE0000"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="2A36F26D" w14:textId="77777777" w:rsidR="002E71AE" w:rsidRPr="00EC73C2" w:rsidRDefault="002E71AE" w:rsidP="004E221B">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+              <w:t>Montant mensuel HT</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="002E71AE" w:rsidRPr="00EC73C2" w14:paraId="5E87BC56" w14:textId="77777777" w:rsidTr="004E221B">
+        <w:trPr>
+          <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+          <w:trHeight w:val="423"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="5228" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="A5A5A5" w:themeColor="accent3"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="0A0A5732" w14:textId="77777777" w:rsidR="002E71AE" w:rsidRPr="00433A39" w:rsidRDefault="002E71AE" w:rsidP="004E221B">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="fr-FR"/>
+              </w:rPr>
+              <w:t>Tenue annuelle de la comptabilité</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5228" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="A5A5A5" w:themeColor="accent3"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="49BFCF7D" w14:textId="75412673" w:rsidR="002E71AE" w:rsidRPr="009B76FB" w:rsidRDefault="002E71AE" w:rsidP="004E221B">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="it-IT"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+              </w:rPr>
+              <w:t>€</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="004C40CD" w14:paraId="43A0549C" w14:textId="77777777" w:rsidTr="004C40CD">
+        <w:trPr>
+          <w:trHeight w:val="416"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="5228" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="1851057D" w14:textId="77777777" w:rsidR="002E71AE" w:rsidRPr="00256E9C" w:rsidRDefault="002E71AE" w:rsidP="004E221B">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="it-IT"/>
+              </w:rPr>
+              <w:t>AG Approbation des comptes</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5228" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="774C4281" w14:textId="5F6CFF0A" w:rsidR="002E71AE" w:rsidRPr="00256E9C" w:rsidRDefault="002E71AE" w:rsidP="004E221B">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:cnfStyle w:val="000000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+              </w:rPr>
+              <w:t>€</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="004C40CD" w14:paraId="3F6CA7D4" w14:textId="77777777" w:rsidTr="004C40CD">
+        <w:trPr>
+          <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+          <w:trHeight w:val="421"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="5228" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="78DAC759" w14:textId="77777777" w:rsidR="002E71AE" w:rsidRPr="00256E9C" w:rsidRDefault="002E71AE" w:rsidP="004E221B">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="it-IT"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:b w:val="0"/>
+                <w:bCs w:val="0"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="it-IT"/>
+              </w:rPr>
+              <w:t>Frais administratifs</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5228" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="7C1EA9FF" w14:textId="738106CF" w:rsidR="002E71AE" w:rsidRPr="00256E9C" w:rsidRDefault="002E71AE" w:rsidP="004E221B">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:lang w:val="it-IT"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+              </w:rPr>
+              <w:t>€</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="466F4429" w14:textId="77777777" w:rsidR="002E71AE" w:rsidRPr="008244A2" w:rsidRDefault="002E71AE" w:rsidP="002E71AE">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="284"/>
+        </w:tabs>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:kern w:val="28"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="it-IT"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3596B20F" w14:textId="77777777" w:rsidR="002E71AE" w:rsidRPr="008244A2" w:rsidRDefault="002E71AE" w:rsidP="002E71AE">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:kern w:val="28"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="it-IT"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7139C921" w14:textId="77777777" w:rsidR="00DC0D01" w:rsidRPr="008244A2" w:rsidRDefault="00DC0D01">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:kern w:val="28"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+          <w:lang w:val="it-IT"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="50E5F577" w14:textId="77777777" w:rsidR="000724B3" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+        <w:t>Afin de valider cette proposition, merci de nous adresser :</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="2106C773" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00981869" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1C1E4BDD" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00981869" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="33"/>
+        </w:numPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+        <w:t>Un « Bon pour accord » par retour de mail ;</w:t>
+      </w:r>
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="515122E5" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00981869" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="33"/>
+        </w:numPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+        <w:t>Un KBIS de la société ;</w:t>
+      </w:r>
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="30B47B37" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00981869" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="33"/>
+        </w:numPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+        <w:t>Un RIB bancaire ;</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="16E7C686" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00981869" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="33"/>
+        </w:numPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+        <w:t>Copie de la pièce d&#x2019;identité du dirigeant ;</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="54B7B87A" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="009A0FCA" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="33"/>
+        </w:numPr>
+        <w:spacing w:line="276" w:lineRule="auto"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:i/>
+          <w:iCs/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:i/>
+          <w:iCs/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+        <w:t>Le cas échéant, les coordonnées du contact du cabinet comptable actuel afin d&#x2019;obtenir son accord de reprise et de récupérer les éléments nécessaires à la bonne reprise du dossier.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="272D0A32" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00981869" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+        <w:t> </w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="05ECECE5" w14:textId="77777777" w:rsidR="000724B3" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="6D48C0AA" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00981869" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+        <w:t>Nous restons à votre disposition pour échanger et discuter de cette proposition.</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="1B1431CC" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00981869" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+        <w:t> </w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="70C71248" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00981869" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+        <w:t>Bien à vous,</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="201556AF" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00D115C4" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:strike/>
+          <w:kern w:val="28"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="6DAB3B3B" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00EC73C2" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5D0C4775" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00EC73C2" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3B1E4B9D" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00EC73C2" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+        <w:t>Signature client</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1447A665" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00EC73C2" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1BC73ACC" w14:textId="77777777" w:rsidR="000724B3" w:rsidRPr="00EC73C2" w:rsidRDefault="000724B3" w:rsidP="000724B3">
+      <w:pPr>
+        <w:ind w:right="141"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+        <w:t>Précédée de la mention « Bon pour accord »</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4527703D" w14:textId="77777777" w:rsidR="00DC0D01" w:rsidRPr="00EC73C2" w:rsidRDefault="00DC0D01" w:rsidP="00DC0D01">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="15099C9E" w14:textId="77777777" w:rsidR="00DC0D01" w:rsidRPr="00EC73C2" w:rsidRDefault="00DC0D01">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Avenir" w:hAnsi="Avenir" w:cstheme="minorHAnsi"/>
+          <w:strike/>
+          <w:kern w:val="28"/>
+          <w:sz w:val="22"/>
+          <w:szCs w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:sectPr w:rsidR="00DC0D01" w:rsidRPr="00EC73C2" w:rsidSect="00205EF5">
+      <w:headerReference w:type="even" r:id="rId8"/>
+      <w:headerReference w:type="default" r:id="rId9"/>
+      <w:footerReference w:type="default" r:id="rId10"/>
+      <w:headerReference w:type="first" r:id="rId11"/>
+      <w:type w:val="continuous"/>
+      <w:pgSz w:w="11906" w:h="16838" w:code="9"/>
+      <w:pgMar w:top="1134" w:right="720" w:bottom="720" w:left="720" w:header="680" w:footer="709" w:gutter="0"/>
+      <w:cols w:space="708"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>
