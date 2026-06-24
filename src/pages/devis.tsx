@@ -17,57 +17,13 @@ interface Mission {
   montant: number
 }
 
-function useDevisForm() {
-  const [civilite, setCivilite] = useState("M.")
-  const [nomDirigeant, setNomDirigeant] = useState("")
-  const [raisonSociale, setRaisonSociale] = useState("")
-  const [adresse, setAdresse] = useState("")
-  const [codePostal, setCodePostal] = useState("")
-  const [ville, setVille] = useState("")
-  const [activite, setActivite] = useState("")
-  const [caAnnuel, setCaAnnuel] = useState("")
-  const [formeJuridique, setFormeJuridique] = useState("")
-  const [regimeTva, setRegimeTva] = useState("")
-  const [dateDebutMission, setDateDebutMission] = useState("")
-  const [dateFinExercice, setDateFinExercice] = useState("")
-  const [missions, setMissions] = useState<Mission[]>([
-    { id: 1, name: "Tenue de la comptabilité", montant: 250 },
-    { id: 2, name: "Frais administratifs", montant: 50 },
-  ])
-
-  const toDevisData = (): DevisData => ({
-    civilite,
-    nomDirigeant,
-    raisonSociale,
-    adresse,
-    codePostal,
-    ville,
-    activite,
-    caAnnuel,
-    formeJuridique,
-    regimeTva,
-    dateDebutMission,
-    dateFinExercice,
-    missions,
-  })
-
-  return {
-    civilite, setCivilite,
-    nomDirigeant, setNomDirigeant,
-    raisonSociale, setRaisonSociale,
-    adresse, setAdresse,
-    codePostal, setCodePostal,
-    ville, setVille,
-    activite, setActivite,
-    caAnnuel, setCaAnnuel,
-    formeJuridique, setFormeJuridique,
-    regimeTva, setRegimeTva,
-    dateDebutMission, setDateDebutMission,
-    dateFinExercice, setDateFinExercice,
-    missions, setMissions,
-    toDevisData,
-  }
-}
+const DEFAULT_MISSIONS: Mission[] = [
+  { id: 1, name: "Tenue de la comptabilité", montant: 0 },
+  { id: 2, name: "Juridique annuel", montant: 0 },
+  { id: 3, name: "ECF", montant: 0 },
+  { id: 4, name: "Plateforme agréée", montant: 0 },
+  { id: 5, name: "Frais administratifs", montant: 0 },
+]
 
 const inputClass =
   "w-full rounded-lg border border-cr-gray-200 bg-white px-3 py-2 text-sm outline-none transition-colors focus:border-cr-red"
@@ -85,28 +41,50 @@ function Field({ label, required, children }: { label: string; required?: boolea
 }
 
 function ComptableTab() {
-  const form = useDevisForm()
+  const [civilite, setCivilite] = useState("M.")
+  const [nom, setNom] = useState("")
+  const [prenom, setPrenom] = useState("")
+  const [raisonSociale, setRaisonSociale] = useState("")
+  const [adresse, setAdresse] = useState("")
+  const [codePostal, setCodePostal] = useState("")
+  const [ville, setVille] = useState("")
+  const [activite, setActivite] = useState("")
+  const [caAnnuel, setCaAnnuel] = useState("")
+  const [formeJuridique, setFormeJuridique] = useState("")
+  const [regimeTva, setRegimeTva] = useState("")
+  const [dateDebutMission, setDateDebutMission] = useState("")
+  const [dateFinExercice, setDateFinExercice] = useState("")
+  const [missions, setMissions] = useState<Mission[]>(DEFAULT_MISSIONS.map(m => ({ ...m })))
+  const [annexerGrilleSociale, setAnnexerGrilleSociale] = useState(false)
   const [generating, setGenerating] = useState(false)
+
+  const toDevisData = useCallback((): DevisData => ({
+    civilite, nom, prenom, raisonSociale, adresse, codePostal, ville,
+    activite, caAnnuel, formeJuridique, regimeTva, dateDebutMission, dateFinExercice,
+    missions, annexerGrilleSociale,
+  }), [civilite, nom, prenom, raisonSociale, adresse, codePostal, ville,
+    activite, caAnnuel, formeJuridique, regimeTva, dateDebutMission, dateFinExercice,
+    missions, annexerGrilleSociale])
 
   const handlePreview = useCallback(async () => {
     setGenerating(true)
     try {
-      const doc = await generateDevisPdf(form.toDevisData())
+      const doc = await generateDevisPdf(toDevisData())
       const blob = doc.output("blob")
       const url = URL.createObjectURL(blob)
       window.open(url, "_blank")
     } finally {
       setGenerating(false)
     }
-  }, [form])
+  }, [toDevisData])
 
   const addMission = () =>
-    form.setMissions([...form.missions, { id: Date.now(), name: "", montant: 0 }])
+    setMissions([...missions, { id: Date.now(), name: "", montant: 0 }])
   const removeMission = (id: number) =>
-    form.setMissions(form.missions.filter((m) => m.id !== id))
+    setMissions(missions.filter((m) => m.id !== id))
   const updateMission = (id: number, field: "name" | "montant", value: string) => {
-    form.setMissions(
-      form.missions.map((m) =>
+    setMissions(
+      missions.map((m) =>
         m.id === id
           ? { ...m, [field]: field === "montant" ? Number(value) || 0 : value }
           : m
@@ -114,7 +92,10 @@ function ComptableTab() {
     )
   }
 
-  const totalHT = form.missions.reduce((s, m) => s + m.montant, 0)
+  const totalHT = missions.reduce((s, m) => s + m.montant, 0)
+
+  const caDisplay = caAnnuel.replace(/\s*€?\s*$/, "")
+  const caWithEuro = caDisplay ? `${caDisplay} €` : ""
 
   return (
     <div className="space-y-8">
@@ -125,26 +106,31 @@ function ComptableTab() {
         </h3>
         <div className="grid grid-cols-2 gap-4">
           <Field label="Civilité" required>
-            <select value={form.civilite} onChange={(e) => form.setCivilite(e.target.value)} className={selectClass}>
+            <select value={civilite} onChange={(e) => setCivilite(e.target.value)} className={selectClass}>
               <option value="M.">M.</option>
               <option value="Mme">Mme</option>
             </select>
           </Field>
-          <Field label="Nom du dirigeant" required>
-            <input value={form.nomDirigeant} onChange={(e) => form.setNomDirigeant(e.target.value)} className={inputClass} />
-          </Field>
           <Field label="Raison sociale" required>
-            <input value={form.raisonSociale} onChange={(e) => form.setRaisonSociale(e.target.value)} className={inputClass} />
+            <input value={raisonSociale} onChange={(e) => setRaisonSociale(e.target.value)} className={inputClass} />
+          </Field>
+          <Field label="Nom du dirigeant" required>
+            <input value={nom} onChange={(e) => setNom(e.target.value.toUpperCase())} className={inputClass} placeholder="NOM" />
+          </Field>
+          <Field label="Prénom" required>
+            <input value={prenom} onChange={(e) => setPrenom(e.target.value)} className={inputClass} placeholder="Prénom" />
           </Field>
           <Field label="Adresse" required>
-            <input value={form.adresse} onChange={(e) => form.setAdresse(e.target.value)} className={inputClass} />
+            <input value={adresse} onChange={(e) => setAdresse(e.target.value)} className={inputClass} />
           </Field>
-          <Field label="Code postal" required>
-            <input value={form.codePostal} onChange={(e) => form.setCodePostal(e.target.value)} className={inputClass} />
-          </Field>
-          <Field label="Ville" required>
-            <input value={form.ville} onChange={(e) => form.setVille(e.target.value)} className={inputClass} />
-          </Field>
+          <div className="grid grid-cols-2 gap-4">
+            <Field label="Code postal" required>
+              <input value={codePostal} onChange={(e) => setCodePostal(e.target.value)} className={inputClass} />
+            </Field>
+            <Field label="Ville" required>
+              <input value={ville} onChange={(e) => setVille(e.target.value)} className={inputClass} />
+            </Field>
+          </div>
         </div>
       </section>
 
@@ -155,13 +141,24 @@ function ComptableTab() {
         </h3>
         <div className="grid grid-cols-2 gap-4">
           <Field label="Activité de l'entreprise" required>
-            <input value={form.activite} onChange={(e) => form.setActivite(e.target.value)} className={inputClass} />
+            <input value={activite} onChange={(e) => setActivite(e.target.value)} className={inputClass} />
           </Field>
-          <Field label="CA annuel estimé">
-            <input value={form.caAnnuel} onChange={(e) => form.setCaAnnuel(e.target.value)} className={inputClass} placeholder="ex : 54K€" />
+          <Field label="CA annuel estimé" required>
+            <div className="relative">
+              <input
+                value={caAnnuel}
+                onChange={(e) => setCaAnnuel(e.target.value)}
+                className={inputClass + " pr-8"}
+                placeholder="ex : 54K"
+              />
+              <span className="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-cr-gray-400">€</span>
+            </div>
+            {caWithEuro && (
+              <p className="mt-1 text-xs text-cr-gray-400">Affiché : {caWithEuro}</p>
+            )}
           </Field>
           <Field label="Forme juridique">
-            <select value={form.formeJuridique} onChange={(e) => form.setFormeJuridique(e.target.value)} className={selectClass}>
+            <select value={formeJuridique} onChange={(e) => setFormeJuridique(e.target.value)} className={selectClass}>
               <option value="">Sélectionner</option>
               <option>Entreprise individuelle</option>
               <option>SARL</option>
@@ -173,7 +170,7 @@ function ComptableTab() {
             </select>
           </Field>
           <Field label="Régime TVA" required>
-            <select value={form.regimeTva} onChange={(e) => form.setRegimeTva(e.target.value)} className={selectClass}>
+            <select value={regimeTva} onChange={(e) => setRegimeTva(e.target.value)} className={selectClass}>
               <option value="">Sélectionner</option>
               <option>Mensuel</option>
               <option>Trimestriel</option>
@@ -182,10 +179,10 @@ function ComptableTab() {
             </select>
           </Field>
           <Field label="Date de début de mission" required>
-            <input type="date" value={form.dateDebutMission} onChange={(e) => form.setDateDebutMission(e.target.value)} className={inputClass} />
+            <input type="date" value={dateDebutMission} onChange={(e) => setDateDebutMission(e.target.value)} className={inputClass} />
           </Field>
           <Field label="Date de fin du 1er exercice" required>
-            <input type="date" value={form.dateFinExercice} onChange={(e) => form.setDateFinExercice(e.target.value)} className={inputClass} />
+            <input type="date" value={dateFinExercice} onChange={(e) => setDateFinExercice(e.target.value)} className={inputClass} />
           </Field>
         </div>
       </section>
@@ -196,7 +193,7 @@ function ComptableTab() {
           Missions
         </h3>
         <div className="space-y-2">
-          {form.missions.map((m) => (
+          {missions.map((m) => (
             <div key={m.id} className="flex items-center gap-3 rounded-lg border border-cr-gray-200 bg-white px-4 py-3">
               <input
                 value={m.name}
@@ -233,6 +230,19 @@ function ComptableTab() {
           {totalHT.toLocaleString("fr-FR")} €
         </span>
       </div>
+
+      <label className="flex cursor-pointer items-center gap-3 rounded-lg border border-cr-gray-200 bg-white px-4 py-3 transition-colors hover:border-cr-gray-300">
+        <input
+          type="checkbox"
+          checked={annexerGrilleSociale}
+          onChange={(e) => setAnnexerGrilleSociale(e.target.checked)}
+          className="accent-cr-red"
+        />
+        <div>
+          <span className="text-sm font-medium text-cr-gray-900">Ajouter la grille tarifaire du pôle social</span>
+          <p className="text-xs text-cr-gray-500">Annexe au PDF les tarifs des prestations sociales 2025</p>
+        </div>
+      </label>
 
       <div className="flex justify-end gap-3">
         <Button variant="outline" onClick={handlePreview} disabled={generating}>
@@ -282,9 +292,76 @@ function SocialTab() {
             { label: "DPAE", price: "10 €" },
             { label: "CDD", price: "100 €" },
             { label: "CDI", price: "100 €" },
+            { label: "CDI ou CDD avec clauses spécifiques", price: "Sur devis" },
             { label: "Avenant à un contrat de travail", price: "50 €" },
+            { label: "Simulation bulletin de salaire", price: "15 €" },
+            { label: "Procédures disciplinaires", price: "Sur devis" },
+            { label: "Procédures licenciements", price: "Sur devis" },
             { label: "Rupture conventionnelle", price: "375 €" },
+            { label: "Déclaration arrêt maladie", price: "30 €" },
+            { label: "Déclaration accident de travail", price: "40 €" },
             { label: "Solde de tout compte", price: "50 €" },
+            { label: "Décision unilatérale employeur : Prime PPV", price: "Sur devis" },
+            { label: "Contrôle URSSAF sur pièces", price: "300 €" },
+            { label: "Contrôle URSSAF sur place (< 6 sal.)", price: "450 €" },
+            { label: "Contrôle URSSAF sur place (≥ 6 sal.)", price: "Sur devis" },
+          ].map((opt) => (
+            <label key={opt.label} className="flex cursor-pointer items-center justify-between rounded-lg border border-cr-gray-200 bg-white px-4 py-3 transition-colors hover:border-cr-gray-300">
+              <div className="flex items-center gap-3">
+                <input type="checkbox" className="accent-cr-red" />
+                <span className="text-sm text-cr-gray-900">{opt.label}</span>
+              </div>
+              <span className="text-sm font-medium tabular-nums text-cr-gray-600">{opt.price}</span>
+            </label>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h3 className="mb-4 flex items-center gap-2 text-sm font-semibold text-cr-gray-900">
+          <div className="h-4 w-0.5 rounded-full bg-cr-red" />
+          Adhésions
+        </h3>
+        <div className="space-y-2">
+          {[
+            { label: "Adhésion mutuelle et paramétrage", price: "50 €" },
+            { label: "Adhésion prévoyance et paramétrage", price: "50 €" },
+            { label: "Adhésion médecine du travail", price: "25 €" },
+            { label: "Forfait adhésion organismes secteur bâtiment", price: "100 €" },
+          ].map((opt) => (
+            <label key={opt.label} className="flex cursor-pointer items-center justify-between rounded-lg border border-cr-gray-200 bg-white px-4 py-3 transition-colors hover:border-cr-gray-300">
+              <div className="flex items-center gap-3">
+                <input type="checkbox" className="accent-cr-red" />
+                <span className="text-sm text-cr-gray-900">{opt.label}</span>
+              </div>
+              <span className="text-sm font-medium tabular-nums text-cr-gray-600">{opt.price}</span>
+            </label>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h3 className="mb-4 flex items-center gap-2 text-sm font-semibold text-cr-gray-900">
+          <div className="h-4 w-0.5 rounded-full bg-cr-red" />
+          Missions exceptionnelles RH
+        </h3>
+        <div className="space-y-2">
+          {[
+            { label: "MySilae + Accès coffre fort numérique", price: "2 € / bulletin" },
+            { label: "Paiement salaires : envoi fichier prélèvement", price: "2 € HT/mois" },
+            { label: "Hotline droit social", price: "100 € HT/h" },
+            { label: "Convention transfert", price: "250 €" },
+            { label: "Audit RH et/ou social", price: "Sur devis" },
+            { label: "Charte télétravail", price: "400 €" },
+            { label: "Accord d'entreprise", price: "Sur devis" },
+            { label: "Règlement intérieur", price: "750 €" },
+            { label: "Mise en place TR carte (DUE + paramétrage)", price: "300 €" },
+            { label: "Mise en place TR papier (DUE + paramétrage)", price: "200 €" },
+            { label: "Entretien annuel", price: "800 €" },
+            { label: "Convention MAD + avenant", price: "300 €" },
+            { label: "Fiches de poste", price: "Sur devis" },
+            { label: "Aide à l'affichage obligatoire", price: "150 €" },
+            { label: "Accompagnement DUERP", price: "Sur devis" },
           ].map((opt) => (
             <label key={opt.label} className="flex cursor-pointer items-center justify-between rounded-lg border border-cr-gray-200 bg-white px-4 py-3 transition-colors hover:border-cr-gray-300">
               <div className="flex items-center gap-3">
