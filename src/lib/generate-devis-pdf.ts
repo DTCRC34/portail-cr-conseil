@@ -10,17 +10,17 @@ export interface DevisData {
   codePostal: string
   ville: string
   activite: string
-  // comptable-specific
   caAnnuel?: string
   formeJuridique?: string
   regimeTva?: string
   dateFinExercice?: string
   annexerGrilleSociale?: boolean
-  // social-specific
   nombreSalaries?: string
-  // shared
   dateDebutMission: string
-  missions: { name: string; montant: number | null }[]
+  missions: { name: string; montantMensuel: number | null; montantAnnuel: number | null }[]
+  redacteurCivilite: string
+  redacteurNom: string
+  redacteurPrenom: string
 }
 
 async function loadImageAsDataUrl(url: string): Promise<string> {
@@ -32,6 +32,18 @@ async function loadImageAsDataUrl(url: string): Promise<string> {
     reader.onerror = reject
     reader.readAsDataURL(blob)
   })
+}
+
+function formatDateFr(d: Date): string {
+  const dd = String(d.getDate()).padStart(2, "0")
+  const mm = String(d.getMonth() + 1).padStart(2, "0")
+  return `${dd}/${mm}/${d.getFullYear()}`
+}
+
+function fmtPrice(v: number | null): string {
+  if (v === null) return "Sur devis"
+  if (v === 0) return "—"
+  return `${v.toLocaleString("fr-FR")} €`
 }
 
 const BODY_COLOR = "#333333"
@@ -57,9 +69,7 @@ export async function generateDevisPdf(data: DevisData) {
       loadImageAsDataUrl("/footer-cr.jpg"),
       loadImageAsDataUrl("/watermark-cr.jpg"),
     ])
-  } catch {
-    // optional
-  }
+  } catch { /* optional */ }
 
   function addHeaderFooter() {
     if (watermarkDataUrl) {
@@ -67,23 +77,15 @@ export async function generateDevisPdf(data: DevisData) {
       const wmH = wmW * (2191 / 1879)
       doc.addImage(watermarkDataUrl, "JPEG", (pageW - wmW) / 2, (pageH - wmH) / 2, wmW, wmH, undefined, "NONE")
     }
-    if (logoDataUrl) {
-      doc.addImage(logoDataUrl, "PNG", marginL, 6, 40, 25)
-    }
-    if (footerDataUrl) {
-      doc.addImage(footerDataUrl, "JPEG", 5, 278, 200, 14)
-    }
+    if (logoDataUrl) doc.addImage(logoDataUrl, "PNG", marginL, 6, 40, 25)
+    if (footerDataUrl) doc.addImage(footerDataUrl, "JPEG", 5, 278, 200, 14)
   }
 
   function infoTable(rows: [string, string][]) {
     doc.setFontSize(11)
     rows.forEach((row, i) => {
-      if (i % 2 === 0) {
-        doc.setFillColor("#F2F2F2")
-        doc.rect(tableX, y, contentW, rowH, "F")
-      }
-      doc.setFont("helvetica", "normal")
-      doc.setTextColor(BODY_COLOR)
+      if (i % 2 === 0) { doc.setFillColor("#F2F2F2"); doc.rect(tableX, y, contentW, rowH, "F") }
+      doc.setFont("helvetica", "normal"); doc.setTextColor(BODY_COLOR)
       doc.text(row[0], tableX + 3, y + 5.5)
       doc.setFont("helvetica", "bold")
       doc.text(row[1] || "", tableX + contentW - 3, y + 5.5, { align: "right" })
@@ -95,58 +97,40 @@ export async function generateDevisPdf(data: DevisData) {
   addHeaderFooter()
   let y = 38
 
-  // Client info — right-aligned
-  doc.setFont("helvetica", "bold")
-  doc.setFontSize(11)
-  doc.setTextColor(BODY_COLOR)
+  doc.setFont("helvetica", "bold"); doc.setFontSize(11); doc.setTextColor(BODY_COLOR)
   doc.text(data.raisonSociale || "[RAISON SOCIALE]", pageW - marginR, y, { align: "right" })
   y += 6
   doc.setFont("helvetica", "normal")
-  const civiliteLabel = data.civilite === "Mme" ? "Madame" : "Monsieur"
-  doc.text(`À l'attention de ${civiliteLabel} ${data.nom || "[NOM]"} ${data.prenom || "[PRÉNOM]"}`, pageW - marginR, y, { align: "right" })
+  const civ = data.civilite === "Mme" ? "Madame" : "Monsieur"
+  doc.text(`À l'attention de ${civ} ${data.nom || "[NOM]"} ${data.prenom || "[PRÉNOM]"}`, pageW - marginR, y, { align: "right" })
   y += 6
   doc.text(data.adresse || "[ADRESSE]", pageW - marginR, y, { align: "right" })
   y += 6
-  doc.text(`${data.codePostal || "[CODE POSTAL]"} ${data.ville || "[VILLE]"}`, pageW - marginR, y, { align: "right" })
+  doc.text(`${data.codePostal || "[CP]"} ${data.ville || "[VILLE]"}`, pageW - marginR, y, { align: "right" })
   y += 8
-  const dateStr = new Date().toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })
-  doc.text(`Lattes, le ${dateStr}`, pageW - marginR, y, { align: "right" })
+  doc.text(`Lattes, le ${formatDateFr(new Date())}`, pageW - marginR, y, { align: "right" })
   y += 20
 
-  // DEVIS title
-  doc.setFont("helvetica", "bold")
-  doc.setFontSize(14)
-  doc.setTextColor(RED)
-  const titleSuffix = data.type === "social" ? "DEVIS — PÔLE SOCIAL" : "DEVIS"
-  doc.text(titleSuffix, marginL, y)
+  doc.setFont("helvetica", "bold"); doc.setFontSize(14); doc.setTextColor(RED)
+  doc.text(data.type === "social" ? "DEVIS — PÔLE SOCIAL" : "DEVIS", marginL, y)
   y += 12
 
-  // Intro paragraphs — justified
-  doc.setFont("helvetica", "normal")
-  doc.setFontSize(11)
-  doc.setTextColor(BODY_COLOR)
-
+  doc.setFont("helvetica", "normal"); doc.setFontSize(11); doc.setTextColor(BODY_COLOR)
   const intro1 = "C&R Conseil est un cabinet d'expertise comptable et de conseils aux entreprises et dirigeants. Gestion de vos factures, déclarations fiscales, suivi de votre trésorerie, optimisation de votre rémunération, rédaction de vos procès-verbaux... C'est simple. On s'occupe de tout."
-  const lines1 = doc.splitTextToSize(intro1, contentW)
-  doc.text(lines1, marginL, y, { align: "justify", maxWidth: contentW })
-  y += lines1.length * 5.5 + 4
+  const l1 = doc.splitTextToSize(intro1, contentW)
+  doc.text(l1, marginL, y, { align: "justify", maxWidth: contentW }); y += l1.length * 5.5 + 4
 
   const intro2 = "Toutefois, loin des prestations uniques et standardisées, nous souhaitons devenir le partenaire incontournable de votre vie de dirigeant. Nous nous adaptons à votre métier, aux enjeux de votre entreprise, et à vos spécificités propres. Un travail en commun qui participera à la pérennisation et au développement de votre activité !"
-  const lines2 = doc.splitTextToSize(intro2, contentW)
-  doc.text(lines2, marginL, y, { align: "justify", maxWidth: contentW })
-  y += lines2.length * 5.5 + 4
+  const l2 = doc.splitTextToSize(intro2, contentW)
+  doc.text(l2, marginL, y, { align: "justify", maxWidth: contentW }); y += l2.length * 5.5 + 4
 
   doc.text("C&R Conseil, c'est la volonté d'être bien plus qu'un simple cabinet de comptabilité.", marginL, y, { align: "justify", maxWidth: contentW })
   y += 12
 
-  // Présentation de votre entreprise
-  doc.setFillColor(RED)
-  doc.rect(tableX, y, contentW, rowH, "F")
-  doc.setFont("helvetica", "bold")
-  doc.setFontSize(11)
-  doc.setTextColor("#FFFFFF")
-  doc.text("Présentation de votre entreprise", tableX + 3, y + 5.5)
-  y += rowH
+  // Enterprise table
+  doc.setFillColor(RED); doc.rect(tableX, y, contentW, rowH, "F")
+  doc.setFont("helvetica", "bold"); doc.setFontSize(11); doc.setTextColor("#FFFFFF")
+  doc.text("Présentation de votre entreprise", tableX + 3, y + 5.5); y += rowH
 
   if (data.type === "comptable") {
     const caDisplay = data.caAnnuel ? data.caAnnuel.replace(/\s*€?\s*$/, "") + " €" : ""
@@ -166,129 +150,80 @@ export async function generateDevisPdf(data: DevisData) {
     ])
   }
 
-  // === PAGE 2 ===
-  doc.addPage()
-  addHeaderFooter()
-  y = 38
+  // === PAGE 2 — MISSIONS ===
+  doc.addPage(); addHeaderFooter(); y = 38
+  doc.setFont("helvetica", "bold"); doc.setFontSize(14); doc.setTextColor(RED)
+  doc.text("NOTRE PROPOSITION", marginL, y); y += 2
+  doc.setDrawColor(BODY_COLOR); doc.setLineWidth(0.3)
+  doc.line(marginL, y, pageW - marginR, y); y += 14
 
-  doc.setFont("helvetica", "bold")
-  doc.setFontSize(14)
-  doc.setTextColor(RED)
-  doc.text("NOTRE PROPOSITION", marginL, y)
-  y += 2
-  doc.setDrawColor(BODY_COLOR)
-  doc.setLineWidth(0.3)
-  doc.line(marginL, y, pageW - marginR, y)
-  y += 14
+  // Missions table with 3 columns: mission | mensuel | annuel
+  const col1W = contentW * 0.50
+  const col2W = contentW * 0.25
 
-  // Missions table header
-  const hasPrices = data.missions.some(m => m.montant !== null)
-  doc.setFillColor(RED)
-  doc.rect(tableX, y, contentW, rowH, "F")
-  doc.setFont("helvetica", "bold")
-  doc.setFontSize(11)
-  doc.setTextColor("#FFFFFF")
+  doc.setFillColor(RED); doc.rect(tableX, y, contentW, rowH, "F")
+  doc.setFont("helvetica", "bold"); doc.setFontSize(10); doc.setTextColor("#FFFFFF")
   doc.text("Liste des missions", tableX + 3, y + 5.5)
-  if (hasPrices) {
-    doc.text(data.type === "comptable" ? "Montant mensuel HT" : "Tarif HT", tableX + contentW - 3, y + 5.5, { align: "right" })
-  }
+  doc.text("Mensuel HT", tableX + col1W + col2W - 3, y + 5.5, { align: "right" })
+  doc.text("Annuel HT", tableX + contentW - 3, y + 5.5, { align: "right" })
   y += rowH
 
-  // Mission rows
-  doc.setFontSize(11)
+  doc.setFontSize(10)
   data.missions.forEach((mission, i) => {
-    if (y > 250) {
-      doc.addPage()
-      addHeaderFooter()
-      y = 38
-    }
-    if (i % 2 === 0) {
-      doc.setFillColor("#F2F2F2")
-      doc.rect(tableX, y, contentW, rowH, "F")
-    }
-    doc.setFont("helvetica", "normal")
-    doc.setTextColor(BODY_COLOR)
+    if (y > 250) { doc.addPage(); addHeaderFooter(); y = 38 }
+    if (i % 2 === 0) { doc.setFillColor("#F2F2F2"); doc.rect(tableX, y, contentW, rowH, "F") }
+    doc.setFont("helvetica", "normal"); doc.setTextColor(BODY_COLOR)
     doc.text(mission.name || "—", tableX + 3, y + 5.5)
-    if (mission.montant !== null) {
-      doc.setFont("helvetica", "bold")
-      const priceStr = mission.montant > 0 ? `${mission.montant.toLocaleString("fr-FR")} €` : "Sur devis"
-      doc.text(priceStr, tableX + contentW - 3, y + 5.5, { align: "right" })
-    }
+    doc.setFont("helvetica", "bold")
+    doc.text(fmtPrice(mission.montantMensuel), tableX + col1W + col2W - 3, y + 5.5, { align: "right" })
+    doc.text(fmtPrice(mission.montantAnnuel), tableX + contentW - 3, y + 5.5, { align: "right" })
     y += rowH
   })
 
-  // Total row (only for comptable with numeric amounts)
-  if (data.type === "comptable") {
-    const totalHT = data.missions.reduce((s, m) => s + (m.montant || 0), 0)
-    y += 4
-    doc.setFillColor(RED)
-    doc.rect(tableX, y, contentW, rowH + 2, "F")
-    doc.setFont("helvetica", "bold")
-    doc.setFontSize(11)
-    doc.setTextColor("#FFFFFF")
-    doc.text("TOTAL MENSUEL HT", tableX + 3, y + 6.5)
-    doc.text(`${totalHT.toLocaleString("fr-FR")} €`, tableX + contentW - 3, y + 6.5, { align: "right" })
-    y += rowH + 2
-  }
+  // Total row
+  const totalM = data.missions.reduce((s, m) => s + (m.montantMensuel || 0), 0)
+  const totalA = data.missions.reduce((s, m) => s + (m.montantAnnuel || 0), 0)
+  y += 4
+  doc.setFillColor(RED); doc.rect(tableX, y, contentW, rowH + 2, "F")
+  doc.setFont("helvetica", "bold"); doc.setFontSize(10); doc.setTextColor("#FFFFFF")
+  doc.text("TOTAL HT", tableX + 3, y + 6.5)
+  doc.text(`${totalM.toLocaleString("fr-FR")} €`, tableX + col1W + col2W - 3, y + 6.5, { align: "right" })
+  doc.text(`${totalA.toLocaleString("fr-FR")} €`, tableX + contentW - 3, y + 6.5, { align: "right" })
+  y += rowH + 2 + 16
 
-  // Two blank lines
-  y += 16
+  // Closing
+  doc.setFont("helvetica", "normal"); doc.setFontSize(11); doc.setTextColor(BODY_COLOR)
+  doc.text("Afin de valider cette proposition, merci de nous adresser :", marginL, y, { align: "justify", maxWidth: contentW }); y += 8
 
-  // Closing text
-  doc.setFont("helvetica", "normal")
-  doc.setFontSize(11)
-  doc.setTextColor(BODY_COLOR)
-  doc.text("Afin de valider cette proposition, merci de nous adresser :", marginL, y, { align: "justify", maxWidth: contentW })
-  y += 8
-
-  const items = [
+  for (const item of [
     "Un « Bon pour accord » par retour de mail ;",
     "Un KBIS de la société ;",
     "Un RIB bancaire ;",
     "Copie de la pièce d'identité du dirigeant ;",
     "Le cas échéant, les coordonnées du contact du cabinet comptable actuel.",
-  ]
-  items.forEach((item) => {
-    doc.text(`•  ${item}`, marginL + 4, y)
-    y += 7
-  })
+  ]) { doc.text(`•  ${item}`, marginL + 4, y); y += 7 }
 
   y += 8
-  doc.text("Nous restons à votre disposition pour échanger et discuter de cette proposition.", marginL, y, { align: "justify", maxWidth: contentW })
-  y += 12
-  doc.text("Bien à vous,", marginL, y)
-  y += 8
-
-  const senderCivilite = data.civilite === "Mme" ? "Mme" : "M."
+  doc.text("Nous restons à votre disposition pour échanger et discuter de cette proposition.", marginL, y, { align: "justify", maxWidth: contentW }); y += 12
+  doc.text("Bien à vous,", marginL, y); y += 8
+  const rc = data.redacteurCivilite === "Mme" ? "Mme" : "M."
   doc.setFont("helvetica", "bold")
-  doc.text(`${senderCivilite} ${data.prenom || ""} ${data.nom || ""}`.trim(), marginL, y)
-  y += 16
+  doc.text(`${rc} ${data.redacteurPrenom} ${data.redacteurNom}`.trim(), marginL, y); y += 16
 
-  // Signature block — right-aligned
-  const sigBoxW = 70
-  const sigBoxH = 30
+  // Signature
+  const sigBoxW = 70; const sigBoxH = 30
   const sigBoxX = pageW - marginR - sigBoxW
-
-  doc.setFont("helvetica", "normal")
-  doc.setFontSize(10)
-  doc.setTextColor(BODY_COLOR)
-  doc.text("Signature client", sigBoxX + sigBoxW / 2, y, { align: "center" })
-  y += 5
-  doc.setFontSize(9)
-  doc.setTextColor("#999999")
-  doc.text("NOM Prénom du signataire : ___________________________", sigBoxX, y)
-  y += 6
-  doc.setFillColor("#FAFAFA")
-  doc.rect(sigBoxX, y, sigBoxW, sigBoxH, "F")
-  doc.setDrawColor("#CCCCCC")
-  doc.setLineWidth(0.4)
-  doc.rect(sigBoxX, y, sigBoxW, sigBoxH, "S")
+  doc.setFont("helvetica", "normal"); doc.setFontSize(10); doc.setTextColor(BODY_COLOR)
+  doc.text("Signature client", sigBoxX + sigBoxW / 2, y, { align: "center" }); y += 5
+  doc.setFontSize(9); doc.setTextColor("#999999")
+  doc.text("NOM Prénom du signataire : ___________________________", sigBoxX, y); y += 6
+  doc.setFillColor("#FAFAFA"); doc.rect(sigBoxX, y, sigBoxW, sigBoxH, "F")
+  doc.setDrawColor("#CCCCCC"); doc.setLineWidth(0.4); doc.rect(sigBoxX, y, sigBoxW, sigBoxH, "S")
   y += sigBoxH + 4
-  doc.setFontSize(9)
-  doc.setTextColor("#999999")
+  doc.setFontSize(9); doc.setTextColor("#999999")
   doc.text("Précédée de la mention « Bon pour accord »", sigBoxX + sigBoxW / 2, y, { align: "center" })
 
-  // === ANNEXE GRILLE SOCIALE (comptable only) ===
+  // Annexe
   if (data.type === "comptable" && data.annexerGrilleSociale) {
     appendGrilleSociale(doc, addHeaderFooter, tableX, contentW)
   }
@@ -296,78 +231,39 @@ export async function generateDevisPdf(data: DevisData) {
   return doc
 }
 
-function appendGrilleSociale(
-  doc: jsPDF,
-  addHeaderFooter: () => void,
-  tableX: number,
-  contentW: number,
-) {
-  const marginL = 18
-  const marginR = 18
-  const pageW = 210
-  const RED = "#EE0000"
-  const BODY_COLOR = "#333333"
-
+function appendGrilleSociale(doc: jsPDF, addHeaderFooter: () => void, tableX: number, contentW: number) {
+  const marginL = 18; const marginR = 18; const pageW = 210
   let y: number
 
   function sectionHeader(title: string) {
-    doc.setFillColor(RED)
-    doc.rect(tableX, y, contentW, 7, "F")
-    doc.setFont("helvetica", "bold")
-    doc.setFontSize(10)
-    doc.setTextColor("#FFFFFF")
-    doc.text(title, tableX + 3, y + 5)
-    y += 7
+    doc.setFillColor(RED); doc.rect(tableX, y, contentW, 7, "F")
+    doc.setFont("helvetica", "bold"); doc.setFontSize(10); doc.setTextColor("#FFFFFF")
+    doc.text(title, tableX + 3, y + 5); y += 7
   }
-
   function tarifRow(label: string, price: string, idx: number) {
-    if (y > 260) {
-      doc.addPage()
-      addHeaderFooter()
-      y = 38
-    }
-    if (idx % 2 === 0) {
-      doc.setFillColor("#F2F2F2")
-      doc.rect(tableX, y, contentW, 6.5, "F")
-    }
-    doc.setFont("helvetica", "normal")
-    doc.setFontSize(9.5)
-    doc.setTextColor(BODY_COLOR)
+    if (y > 260) { doc.addPage(); addHeaderFooter(); y = 38 }
+    if (idx % 2 === 0) { doc.setFillColor("#F2F2F2"); doc.rect(tableX, y, contentW, 6.5, "F") }
+    doc.setFont("helvetica", "normal"); doc.setFontSize(9.5); doc.setTextColor(BODY_COLOR)
     doc.text(label, tableX + 3, y + 4.5)
     doc.setFont("helvetica", "bold")
-    doc.text(price, tableX + contentW - 3, y + 4.5, { align: "right" })
-    y += 6.5
+    doc.text(price, tableX + contentW - 3, y + 4.5, { align: "right" }); y += 6.5
   }
 
-  doc.addPage()
-  addHeaderFooter()
-  y = 38
+  doc.addPage(); addHeaderFooter(); y = 38
+  doc.setFont("helvetica", "bold"); doc.setFontSize(14); doc.setTextColor(RED)
+  doc.text("ANNEXE — GRILLE TARIFAIRE PÔLE SOCIAL 2025", marginL, y); y += 2
+  doc.setDrawColor(BODY_COLOR); doc.setLineWidth(0.3); doc.line(marginL, y, pageW - marginR, y); y += 10
 
-  doc.setFont("helvetica", "bold")
-  doc.setFontSize(14)
-  doc.setTextColor(RED)
-  doc.text("ANNEXE — GRILLE TARIFAIRE PÔLE SOCIAL 2025", marginL, y)
-  y += 2
-  doc.setDrawColor(BODY_COLOR)
-  doc.setLineWidth(0.3)
-  doc.line(marginL, y, pageW - marginR, y)
-  y += 10
-
-  sectionHeader("Établissement des bulletins de paie mensuels")
-  ;[["1 salarié", "32 € HT"], ["2 à 5 salariés", "28 € HT"], ["6 à 9 salariés", "24 € HT"], ["10 à 19 salariés", "22 € HT"], ["+ de 20 salariés", "Sur devis"]].forEach((r, i) => tarifRow(r[0], r[1], i))
-  y += 4
+  sectionHeader("Bulletins de paie mensuels")
+  ;[["1 salarié","32 € HT"],["2 à 5 salariés","28 € HT"],["6 à 9 salariés","24 € HT"],["10 à 19 salariés","22 € HT"],["+ de 20 salariés","Sur devis"]].forEach((r,i)=>tarifRow(r[0],r[1],i)); y+=4
   sectionHeader("Paramétrage des dossiers de paie")
-  ;[["De 1 à 2 salariés — Annuel", "50 € HT"], ["De 1 à 2 salariés — Reprise", "95 € HT"], ["De 3 à 5 salariés — Annuel", "70 € HT"], ["De 3 à 5 salariés — Reprise", "140 € HT"], ["De 6 à 10 salariés — Annuel", "95 € HT"], ["De 6 à 10 salariés — Reprise", "195 € HT"], ["+ de 20 salariés — Annuel", "120 € HT"], ["+ de 20 salariés — Reprise", "Sur devis"]].forEach((r, i) => tarifRow(r[0], r[1], i))
-  y += 4
+  ;[["1 à 2 sal. — Annuel","50 € HT"],["1 à 2 sal. — Reprise","95 € HT"],["3 à 5 sal. — Annuel","70 € HT"],["3 à 5 sal. — Reprise","140 € HT"],["6 à 10 sal. — Annuel","95 € HT"],["6 à 10 sal. — Reprise","195 € HT"],["+ 20 sal. — Annuel","120 € HT"],["+ 20 sal. — Reprise","Sur devis"]].forEach((r,i)=>tarifRow(r[0],r[1],i)); y+=4
   sectionHeader("Missions ponctuelles paie")
-  ;[["DPAE", "10 € HT"], ["CDD", "100 € HT"], ["CDI", "100 € HT"], ["CDI/CDD clauses spécifiques", "Sur devis"], ["Avenant contrat de travail", "50 € HT"], ["Simulation bulletin", "15 € HT"], ["Procédures disciplinaires", "Sur devis"], ["Procédures licenciements", "Sur devis"], ["Rupture conventionnelle", "375 € HT"], ["Déclaration arrêt maladie", "30 € HT"], ["Déclaration accident travail", "40 € HT"], ["Solde de tout compte", "50 € HT"], ["DUE : Prime PPV", "Sur devis"], ["Contrôle URSSAF pièces", "300 € HT"], ["Contrôle URSSAF place (< 6 sal.)", "450 € HT"], ["Contrôle URSSAF place (≥ 6 sal.)", "Sur devis"]].forEach((r, i) => tarifRow(r[0], r[1], i))
-  y += 4
+  ;[["DPAE","10 € HT"],["CDD","100 € HT"],["CDI","100 € HT"],["CDI/CDD clauses spécifiques","Sur devis"],["Avenant contrat","50 € HT"],["Simulation bulletin","15 € HT"],["Procédures disciplinaires","Sur devis"],["Procédures licenciements","Sur devis"],["Rupture conventionnelle","375 € HT"],["Déclaration arrêt maladie","30 € HT"],["Déclaration accident travail","40 € HT"],["Solde de tout compte","50 € HT"],["DUE : Prime PPV","Sur devis"],["Contrôle URSSAF pièces","300 € HT"],["Contrôle URSSAF place (< 6)","450 € HT"],["Contrôle URSSAF place (≥ 6)","Sur devis"]].forEach((r,i)=>tarifRow(r[0],r[1],i)); y+=4
   sectionHeader("Adhésions")
-  ;[["Adhésion mutuelle et paramétrage", "50 € HT"], ["Adhésion prévoyance et paramétrage", "50 € HT"], ["Adhésion médecine du travail", "25 € HT"], ["Forfait adhésion organismes bâtiment", "100 € HT"]].forEach((r, i) => tarifRow(r[0], r[1], i))
-  y += 4
+  ;[["Adhésion mutuelle","50 € HT"],["Adhésion prévoyance","50 € HT"],["Adhésion médecine du travail","25 € HT"],["Forfait organismes bâtiment","100 € HT"]].forEach((r,i)=>tarifRow(r[0],r[1],i)); y+=4
   sectionHeader("Études mandataire")
-  ;[["Dossier Pôle emploi", "100 € HT"], ["Dossier AGEFIPH", "90 € HT"], ["Gestion aide apprenti", "100 € HT"], ["Autorisation provisoire travail", "80 € HT"], ["Courrier fin période d'essai", "50 € HT"], ["Prise en charge formation", "95 € HT"]].forEach((r, i) => tarifRow(r[0], r[1], i))
-  y += 4
+  ;[["Dossier Pôle emploi","100 € HT"],["Dossier AGEFIPH","90 € HT"],["Aide apprenti","100 € HT"],["Autorisation provisoire travail","80 € HT"],["Courrier fin période d'essai","50 € HT"],["Prise en charge formation","95 € HT"]].forEach((r,i)=>tarifRow(r[0],r[1],i)); y+=4
   sectionHeader("Missions exceptionnelles RH")
-  ;[["MySilae + Coffre fort numérique", "2 € / bulletin"], ["Fichier prélèvement salaires", "2 € HT/mois"], ["Hotline droit social", "100 € HT/h"], ["Convention transfert", "250 € HT"], ["Audit RH/social", "Sur devis"], ["Charte télétravail", "400 € HT"], ["Accord d'entreprise", "Sur devis"], ["Règlement intérieur", "750 € HT"], ["TR carte (DUE + paramétrage)", "300 € HT"], ["TR papier (DUE + paramétrage)", "200 € HT"], ["Entretien annuel", "800 € HT"], ["Convention MAD + avenant", "300 € HT"], ["Fiches de poste", "Sur devis"], ["Affichage obligatoire", "150 € HT"], ["Accompagnement DUERP", "Sur devis"]].forEach((r, i) => tarifRow(r[0], r[1], i))
+  ;[["MySilae + Coffre fort","2 € / bulletin"],["Fichier prélèvement salaires","2 € HT/mois"],["Hotline droit social","100 € HT/h"],["Convention transfert","250 € HT"],["Audit RH/social","Sur devis"],["Charte télétravail","400 € HT"],["Accord d'entreprise","Sur devis"],["Règlement intérieur","750 € HT"],["TR carte","300 € HT"],["TR papier","200 € HT"],["Entretien annuel","800 € HT"],["Convention MAD + avenant","300 € HT"],["Fiches de poste","Sur devis"],["Affichage obligatoire","150 € HT"],["Accompagnement DUERP","Sur devis"]].forEach((r,i)=>tarifRow(r[0],r[1],i))
 }
