@@ -273,7 +273,11 @@ export async function generateDevisPdf(data: DevisData) {
   doc.setFontSize(10)
   doc.setTextColor(BODY_COLOR)
   doc.text("Signature client", sigBoxX + sigBoxW / 2, y, { align: "center" })
-  y += 4
+  y += 5
+  doc.setFontSize(9)
+  doc.setTextColor("#999999")
+  doc.text("NOM Prénom du signataire : ___________________________", sigBoxX, y)
+  y += 6
   doc.setFillColor("#FAFAFA")
   doc.rect(sigBoxX, y, sigBoxW, sigBoxH, "F")
   doc.setDrawColor("#CCCCCC")
